@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="teacher.master.cs" Inherits="PROJE1OKULKAYIT.teacher" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <!-- Custom-Files -->
+    <link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Bootstrap-CSS -->
+    <link href="web/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Style-CSS -->
+    <link href="web/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //Custom-Files -->
+
+    <!-- Web-Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <!-- //Web-Fonts -->
+    <title></title>
+
+</head>
+<body>
+        
+<header>
+        <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center py-2 px-sm-2 px-1">
+                <!-- logo -->
+                <div id="logo">
+                    <h1><a href="#">My School</a></h1>
+                </div>
+                <!-- //logo -->
+                <!-- nav -->
+                <div class="nav_w3ls ml-lg-5">
+                    <nav>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li><a href="index.html">Students</a></li>
+                            <li><a href="Messages.aspx">Messages</a></li>
+                            <li><a href="okunanmesajlar.aspx">Mark As Read</a></li>
+                            
+                                <!-- First Tier Drop Down -->
+                              
+                            
+                            <li><a href="login.aspx">Sign Out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- //nav -->
+            </div>
+        </div>
+    </header>
+    <br />
+     <br />
+    
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div class="container"></div>
+    </asp:ContentPlaceHolder>
+</body>
+</html>
